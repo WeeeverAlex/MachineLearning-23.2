@@ -12,8 +12,10 @@ def index():
     return "Hello World!"
 
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['GET', 'POST'])
 def predict():
+    if request.method == 'GET':
+        return "Send data as JSON in POST request to get a prediction."
     try:
         # Obter dados do JSON recebido
         data = request.get_json(force=True)
