@@ -7,6 +7,11 @@ app = Flask(__name__)
 # Carregar o modelo treinado
 model = load('elasticnet_model.joblib')
 
+@app.route('/')
+def index():
+    return "Hello World!"
+
+
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
