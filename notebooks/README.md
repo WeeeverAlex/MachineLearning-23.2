@@ -22,9 +22,22 @@ pip install -r requirements.txt
 ## Por fim, basta executar os arquivos dentro da pasta notebook: 
 
 ```py
-python 0x_xxx_ipynb
+python 01_reading_raw_data.ipynb
 ```
-## Para ver o nosso deploy, basta seguir as informações no arquivo 05_our_model.ipynb: 
+```py
+python 02_analysis_and_preprocessing.ipynb
+```
+```py
+python 03_linear_regression_modeling.ipynb
+```
+```py
+python 04_feature_engineering.ipynb
+```
+```py
+python 05_our_model.ipynb
+```
+
+## Para rodar o nosso deploy, basta seguir as informações no arquivo 05_our_model.ipynb: 
 ```py
 python 05_our_model.ipynb
 ```
